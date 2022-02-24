@@ -1,0 +1,45 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: grey;
+}
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 200px;
+    margin-top: 250px;
+    height: 250px;
+}
+.container .forms{
+    display: flex;
+    align-items: center;
+    width: 200%;
+    position: relative;
+}
+.container .form{
+    height: 30px;
+    width: 50%;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
